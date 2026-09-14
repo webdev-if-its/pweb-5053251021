@@ -18,17 +18,17 @@ p {
    border, DAN margin sekaligus (nilainya bebas, asal bukan nol). */
 
 .kotak {
-  background-color: #eef7ee;
+  background-color: var(--warna-latar);
   padding: 10px;
   margin: 10px;
   border: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .kotak.adaptive {
     background-color: #f0eef7;
   }
-}
+} */
 
 /* Level 4 — TODO: tambahkan box-sizing: border-box. Biasanya ditulis untuk
    selector universal (*), supaya berlaku ke semua elemen sekaligus. */
@@ -51,19 +51,19 @@ p {
    .tombol, misalnya mengubah background-color supaya terlihat interaktif. */
 
 .tombol:hover {
-  background-color: yellow;
+  background-color: var(--warna-aksen);
 }
 
 .tombol:focus-visible {
-  background-color: lime;
+  background-color: var(--warna-aksen);
 }
 
 .tombol.adaptive {
-  background-color: magenta;
+  background-color: var(--warna-aksen);
 }
 
 .tombol.adaptive:focus-visible {
-  background-color: cyan; 
+  background-color: var(--warna-aksen); 
 }
 
 /* Level 7 — JANGAN UBAH aturan di bawah ini (p.pengumuman). Tugas kalian:
@@ -76,7 +76,7 @@ p.pengumuman {
 }
 
 #pengumuman-utama {
-  color: red;
+  color: var(--warna-aksen);
 }
 
 /* Level 8 — TODO: font-size di bawah ini pakai px — ganti SEMUA font-size
@@ -108,3 +108,11 @@ h1 {
    mengubah TEPAT TIGA variabel dari :root (Level 9) untuk membalik skema
    warna jadi gelap. Jangan menulis ulang seluruh selector lain — cukup
    ubah nilai variabelnya di dalam blok @media ini. */
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --warna-aksen: #0008ff;
+      --warna-latar: #ffffff;
+      --warna-teks: #000000;
+   }
+}
