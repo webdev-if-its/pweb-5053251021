@@ -1,0 +1,188 @@
+.logo {
+	width: 120px;
+}
+
+nav {
+	/* background-color: red; */
+}
+
+.navbar {
+	display: flex;
+	/* background-color: gray; */
+	align-items: center;
+	padding: 12px 64px;
+	justify-content: space-between;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-link {
+	padding: 0px 16px;
+}
+
+.shopping-bag {
+}
+
+.shop {
+	background-color: darkblue;
+	color: white;
+}
+
+/* ----------- */
+
+main {
+	padding: 0px 120px;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+    gap: 150px;
+}
+
+.hero-content {
+    display: flex;
+	flex-direction: column;
+	gap: 70px;
+    /* width: 100%; */
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.hero-title {
+	font-size: 20pt;
+}
+
+.hero-images {
+	display: flex;
+	gap: 10px;
+}
+
+.hero-images-col {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* .test {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+} */
+
+.hero-image {
+	max-width: 250px;
+}
+
+.image-2x1 {
+	grid-column: span 2;
+	grid-row: span 1;
+}
+
+.image-2x2 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.hero-image-half {
+	height: 145px;
+}
+
+.hero-image-full {
+	height: 300px;
+}
+
+/* ----------- */
+
+* {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.button {
+	padding: 12px 35px;
+	border-radius: 4px;
+}
+
+.learn-more {
+	background-color: lightgray;
+    color: darkblue;
+}
+
+.shop-now {
+	background-color: gold;
+    color: darkblue;
+}
+
+.reviews {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+    width: fit-content;
+}
+
+.review-images {
+    /* gap: 0px; */
+}
+
+.review-image {
+	width: 50px;
+	border-radius: 25px;
+}
+
+.review-text {
+    width: 350px;
+}
+
+/* ----------- */
+
+.section-1 {
+	display: flex;
+    padding: 70px 0px;
+    /* align-items: center; */
+}
+
+.section-image {
+    width: 1000px;
+    height: 400px;
+}
+
+.section-text {
+    padding: 20px 60px;
+    font-size: 20px;
+    width: 600px;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
